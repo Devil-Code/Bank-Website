@@ -2,33 +2,35 @@
 
 This repository contains files for a simple bank website implemented in PHP and HTML. It includes registration, login, and account management functionalities.
 
-## Registration and Login System
+## Features
 
-### `login.php`
+### User Registration and Login
+- **`register.php`**: Allows new users to register by providing their basic information such as name, email, mobile number, and password. It validates the user input and stores the information in the database.
+- **`login.php`**: Provides existing users with a secure login interface. Users can log in using their username and password credentials. Invalid login attempts are handled gracefully.
 
-This file contains the HTML and PHP code for the login page. Users can enter their credentials to log in to their accounts.
+### Account Management
+- **`welcome.php`**: Upon successful login, users are greeted with a personalized welcome message and can view their account balance. This page also provides options to reset the password and securely log out of the account.
+- **`reset-password.php`**: Enables users to reset their passwords if they forget them. Users need to provide their email address associated with the account, and a password reset link is sent to their email for security verification.
+- **`logout.php`**: Allows users to securely log out of their accounts, terminating their session and preventing unauthorized access.
 
-### `register.php`
+### Profile Management
+- **`profile.php`**: Allows users to view and update their profile information, including their name, email address, and mobile number. Users can modify their details as needed to keep their account information up to date.
 
-This file contains the HTML and PHP code for the registration page. Users can create a new account by providing their username and password.
+### Transaction History
+- **`transactions.php`**: Displays a record of the user's transaction history, including details such as transaction type, date, and amount. Users can track their financial activities and monitor their account balance over time.
 
-### `address.php`
+### Security Measures
+- **Password Encryption**: User passwords are securely encrypted using the PHP `password_hash()` function before being stored in the database, ensuring protection against unauthorized access.
+- **Session Management**: Sessions are managed securely to authenticate users and prevent session hijacking. Users are required to log in again after a period of inactivity for added security.
 
-This file is part of the registration process and contains the form for users to provide their address information.
+### Error Handling
+- **`error.html`**: An error page displayed when there is an issue with the registration or login process. It provides users with clear feedback and instructions on how to proceed in case of errors.
 
-## Account Management
+### Responsive Design
+- The website is designed to be responsive, ensuring optimal viewing and interaction across a wide range of devices and screen sizes. Users can access the site seamlessly from desktops, laptops, tablets, and smartphones.
 
-### `welcome.php`
-
-After logging in successfully, users are redirected to this page. It displays a welcome message along with the user's username and account balance.
-
-### `reset-password.php`
-
-This page allows users to reset their passwords if they forget them. It includes a form for users to enter their new password.
-
-### `logout.php`
-
-Users can log out of their accounts by visiting this page. It ends their current session and redirects them to the login page.
+### Accessibility
+- The website follows accessibility guidelines to ensure that users with disabilities can navigate and interact with the site effectively. Features such as alternative text for images and keyboard navigation are implemented to enhance accessibility.
 
 ## File Structure
 
