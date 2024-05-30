@@ -52,8 +52,8 @@ To use this bank website:
 
 ## Screenshots
 
-![Homepage](https://github.com/Devil-Code/Bank-Website/screenshots/Home.png)
-![Contact](https://github.com/Devil-Code/Bank-Website/screenshots/Contact.png)
+![Homepage](screenshots/Home.png)
+![Contact](screenshots/Contact.png)
 
 ## Credits
 
