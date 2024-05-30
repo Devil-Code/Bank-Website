@@ -50,6 +50,11 @@ To use this bank website:
 4. Update the database connection details in `config.php`.
 5. Access the website through a web browser to register, log in, and manage your account.
 
+## Screenshots
+
+![Homepage](https://github.com/Devil-Code/Bank-Website/screenshots/Home.png)
+![Contact](https://github.com/Devil-Code/Bank-Website/screenshots/Contact.png)
+
 ## Credits
 
 This project is created by Pritesh Gandhi and is provided under the GNU GPL v3.0 license.
