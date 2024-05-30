@@ -1,0 +1,204 @@
+
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+html, body {
+    width:100%;
+    height:100%;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-align: right;
+    color: #000;
+}
+p, h1 { margin: 0; }
+h1 { margin-bottom: 0.2em; }
+p { line-height: 1.333em; }
+ 
+/* full width/height container */
+#slides-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ 
+/* double the height/width of a viewport */
+#slides {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.slide {
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:50%;
+}
+#slide-1 {
+    background-size: cover;
+}
+#slide-2 {
+    background-size: cover;
+    -webkit-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+   }
+#slide-3 {
+    background-size: cover;
+    -webkit-transform: translate(100%,100%);
+    -ms-transform: translate(100%,100%);
+    transform: translate(100%,100%);
+}
+
+#slide-4 {
+    background-size: cover;
+    -webkit-transform: translate(100%,0%);
+    -ms-transform: translate(100%,0%);
+    transform: translate(100%,0%);
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+
+
+
+/* right-left section start */
+#rightleft{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin: 100px;
+  margin-bottom: 50px;
+}
+#rlcontainer{
+  display: flex;
+  
+  flex-direction:column;
+}
+
+.leftText{
+  flex: 1;
+  min-width: 30vw;
+}
+.rtcontainer{
+  margin: auto;
+  width: 85%;
+  margin-top: 25%;
+  
+}
+.rtcontainer > p {
+  text-align: justify;
+  color: #666;
+  font-size: 12px;
+}
+.rtcontainer > h1 {
+  color: #003679;
+  font-size: 20px;
+  text-align: left;
+}
+.rightImage{
+  flex: 1;
+  margin-left: 50px;
+}
+
+.rightImage > img {
+  width: 70%;
+  margin: 30px 0 40px 0;
+  border-radius: 5px;
+}
+/* right-left section end */
+
+
+
+
+
+@media only screen and (min-width: 860px) {
+
+
+
+ /* left-right section start */
+#rightleft{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 150px;
+}
+#rlcontainer{
+  display: flex;
+  
+  flex-direction:row;
+}
+
+.leftText{
+  flex: 1;
+  min-width: 30vw;
+}
+.rtcontainer{
+  margin: auto;
+  width: 85%;
+  margin-top: 25%;
+  
+}
+.rtcontainer > p {
+  text-align: justify;
+  color: #666;
+  font-size: 15px;
+}
+.rtcontainer > h1 {
+  color: #003679;
+  font-size: 50px;
+  text-align: left;
+}
+.rightImage{
+    flex: 1;
+    margin: auto;
+}
+.rightImage > img {
+  width: 60%;
+  margin: 60px 0 0 100px ;
+  border-radius: 5px;
+}
+/* left-right section end */
+
+
+}
