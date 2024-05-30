@@ -2,6 +2,11 @@
 
 This repository contains files for a simple bank website implemented in PHP and HTML. It includes registration, login, and account management functionalities.
 
+## Screenshots
+
+![Homepage](screenshots/Home.png)
+![Contact](screenshots/Contact.png)
+
 ## Features
 
 ### User Registration and Login
@@ -49,11 +54,6 @@ To use this bank website:
 3. Import the provided SQL schema into your MySQL database.
 4. Update the database connection details in `config.php`.
 5. Access the website through a web browser to register, log in, and manage your account.
-
-## Screenshots
-
-![Homepage](screenshots/Home.png)
-![Contact](screenshots/Contact.png)
 
 ## Credits
 
